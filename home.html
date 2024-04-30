@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='dashboardadmin.html'">BACK</button>
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="logout.php">LOGOUT</a>
+    </div>
+    <main>
+        <section>
+            <center>
+                <video width="400" height="200" controls>
+                    <source src="host.MP4" type="video/MP4">
+                    Your browser does not support the video tag.
+                </video>
+            </center>
+            <center>
+                <h1>WELCOME TO MY PROJECT </h1>
+                <h1> HOSTEL_MANAGEMENT_SYSTEM </h1>
+                We are a team passionate about transforming hostel management through innovative technology solutions. Comprised of experts in software development and hospitality management, we aim to simplify hostel operations and enhance the experience for administrators, residents, and guests. Our commitment to integrity, transparency, and excellence drives us to deliver user-centric solutions that streamline processes and optimize efficiency. With a focus on innovation and customer satisfaction, we are dedicated to helping hostels thrive in today's dynamic hospitality industry.
+            </center>
+        </section>
+    </main>
+    <script>
+        const colors = ['#ff0000', '#f1f1f1', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#ffA500']; // Added orange color
+        let index = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;
+        }
+
+        // Change background color every second
+        setInterval(changeBackgroundColor, 1000);
+    </script>
+</body>
+</html>

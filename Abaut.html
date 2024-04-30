@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSTEL MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <style>
+        /* CSS for button */
+        .toggle-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-button" onclick="toggleBackgroundColor()">Toggle Background Color</button>
+    <hr>
+    <h1><u>About us</u></h1>
+
+    <!-- Content about us -->
+    <p>We are a team passionate about transforming hostel management through innovative technology solutions. Comprised of experts in software development and hospitality management, we aim to simplify hostel operations and enhance the experience for administrators, residents, and guests. Our commitment to integrity, transparency, and excellence drives us to deliver user-centric solutions that streamline processes and optimize efficiency. With a focus on innovation and customer satisfaction, we are dedicated to helping hostels thrive in today's dynamic hospitality industry.</p>
+
+    <h2><bold><u>Our Mission</u></bold></h2>
+    <p>Our mission is to revolutionize hostel management by providing an innovative and user-friendly solution that empowers administrators to efficiently manage operations while enhancing the experience for residents and guests. We strive to optimize workflow processes, ensure accuracy in management tasks, and foster a sense of community within hostel environments through seamless communication and service delivery.</p>
+
+    <h2><bold><u>Who We Are</u></bold></h2>
+    <p>We are a dedicated team of hospitality and technology enthusiasts passionate about revolutionizing hostel management. With a blend of expertise in software development and hospitality management, we bring together our skills and knowledge to create a hostel management system that sets new standards in efficiency, reliability, and user experience. Our team is committed to making a positive impact in the hospitality industry by providing cutting-edge solutions that simplify operations and enhance guest satisfaction.</p>
+
+    <h2><bold><u>What We Do</u></bold></h2>
+    <p>In our hostel management system, we provide a comprehensive solution that automates and streamlines various aspects of hostel operations. Our system facilitates efficient room allocation and management, online booking and payment processing, maintenance tracking and resolution, resident communication, and reporting and analytics. By centralizing these functions into a user-friendly platform, we empower administrators to manage their hostels effectively while delivering a seamless experience for residents and guests.</p>
+
+    <h2><bold><u>Our Values</u></bold></h2>
+    <p>We uphold the highest standards of integrity, honesty, and transparency in everything we do, fostering trust and accountability with our clients, partners, and stakeholders. We embrace innovation and continuous improvement, leveraging the latest technologies and best practices to deliver cutting-edge solutions that drive positive change and create value for our customers. We are committed to sustainability in all aspects of our operations, prioritizing environmental stewardship, social responsibility, and economic viability in our decision-making processes. We believe in the power of collaboration and teamwork, fostering a culture of respect, diversity, and inclusivity where every voice is heard, and every contribution is valued. We are dedicated to exceeding customer expectations, providing personalized solutions, responsive service, and ongoing support to ensure the success of our clients' renewable energy projects.</p>
+
+    <h2><bold><u>Why Choose Us</u></bold></h2>
+    <ul>
+        <li><b>Expertise:</b> With years of experience and a proven track record in the hostel management system, we have the knowledge, skills, and resources to deliver results that exceed expectations.</li>
+        <li><b>Customization:</b> We understand that every project is unique, which is why we take a tailored approach to design, implementation, and support, ensuring that our solutions align with our clients' specific goals and requirements.</li>
+        <li><b>Reliability:</b> We are committed to delivering reliable, high-quality products and services that meet the highest industry standards, providing peace of mind and confidence to our customers.</li>
+        <li><b>Sustainability:</b> As champions of sustainability, we are dedicated to promoting environmentally friendly practices and reducing carbon emissions through the widespread adoption of renewable energy technologies.</li>
+        <li><b>Partnership:</b> We view our clients as partners in progress, working closely with them to understand their needs, address their challenges, and achieve their objectives together.</li>
+    </ul>
+
+    <script>
+        // JavaScript code to toggle background color
+        var colors = ["#3498db", "#e74c3c", "#9b59b6", "#2ecc71"]; // Array of different colors
+        var colorIndex = 0; // Index to track current color
+
+        function toggleBackgroundColor() {
+            document.body.style.backgroundColor = colors[colorIndex]; // Set the background color
+            colorIndex = (colorIndex + 1) % colors.length; // Move to the next color in the array
+        }
+    </script>
+</body>
+</html>

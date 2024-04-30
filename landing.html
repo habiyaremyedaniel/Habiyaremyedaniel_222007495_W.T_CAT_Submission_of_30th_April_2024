@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardadmin.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin site</title>
+</head>
+<body>
+    <h1>Admin site</h1>
+    
+    <!-- habiyaremye daniel 222007495Admin Registration Form -->
+    <h2>Create Admin</h2>
+    <form method="post" action="landing.php">
+        <label for="username">Name:</label><br>
+        <input type="text" name="username" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" required><br>
+        <label for="phone_number">Phone Number:</label><br>
+        <input type="number" name="phone_number" required><br>
+        <label for="role">Role:</label><br>
+        <input type="text" name="role" required><br>
+        <label for="bank_id">Bank ID:</label><br>
+        <input type="number" name="bank_id" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User Admin </h2>
+     <form method="post" action="landing.php">
+                    <input type="number" name="admin_id" placeholder=" New admin_id">
+                    <input type="text" name="newusername" placeholder="New username">
+                    <input type="email" name="newemail" placeholder="New email">
+                    <input type="password" name="newpassword" placeholder="New password">
+                    <input type="text" name="newphone_number" placeholder="New phone Number">
+                    <input type="text" name="newrole" placeholder="New role">
+                    <input type="text" name="newbank_id" placeholder="New bank ID">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">View</button>
+                  
+                                </form>
+</body>
+</html>

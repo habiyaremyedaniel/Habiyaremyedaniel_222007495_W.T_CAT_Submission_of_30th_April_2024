@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Habiyaremye daniel 2220007495--->
+    <button class="back-button"onclick="window.location.href='dashboardadmin.html'">BACK</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>room Panel</title>
+</head>
+<body>
+    <h1>room page</h1>
+    
+    <!-- room Registration Form -->
+    <h2>Create room</h2>
+    <form method="post" action="landingroom.php">
+      <label for="room_number">Room Number:</label><br>
+        <input type="text" name="room_number" required><br>
+        <label for="capacity">Capacity:</label><br>
+        <input type="text" name="capacity" required><br>
+        <label for="type">Type:</label><br>
+        <input type="text" name="type" required><br>
+        <label for="rent">Rent:</label><br>
+        <input type="number" name="rent" required><br>
+        <label for="facilities">Facilities:</label><br>
+        <input type="text" name="facilities" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User room </h2>
+     <form method="post" action="landingroom.php">
+                    <input type="number" name="room_id" placeholder=" New room_id">
+                    <input type="number" name="newroom_number" placeholder="New room_number">
+                    <input type="text" name="newcapacity" placeholder="New capacity">
+                    <input type="text" name="newtype" placeholder="New type">
+                    <input type="number" name="newrent" placeholder="New rent">
+                    <input type="text" name="newfacilities" placeholder="New facilities">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

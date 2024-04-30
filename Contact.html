@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSTEL MANAGEMENT SYSTEM - About</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body bgcolor="green">
+    <nav>
+        <!-- Navigation links -->
+    </nav>
+    <hr>
+    <center>
+        <h2><u><marquee>&copy;OUR CONTACT</marquee></u></h2>
+    </center>
+    <h2>OUR CONTACT US</h2>
+    <ul>
+        <!-- Contact information -->
+    </ul>
+    <p>
+        Ready to embark on your hostel management system journey? Get in touch with us today to learn more about our products, services, and how we can help you make the switch to HMS. Together, we can create a brighter, more sustainable future for all.<br>
+        telephone: 0729554144<br>
+        email: habiyaremyedaniel2021@gmail.com<br>
+        Postal Address: PO BOX 4285 KIGALI-RWANDA
+    </p>
+    <p>FOR MORE INFORMATION VISIT US THROUGH:
+        <a href="https://www.twitter.com/habiyaremyedaniel2021@gmail.com">Twitter</a>
+        <a href="https://www.instagram.com/habiyaremyedaniel2021@gmail.com">Instagram</a>
+        <a href="https://github.com/habiyaremyedaniel/222007495_WT-Assignment-_A_on22_03_2024.git">Github</a>
+        <!-- Add more links if needed -->
+    </p>
+
+    <footer>
+        <center>
+            <p><marquee>&copy; 2024   HOSTEL MANAGEMENT SYSTEM HABIYAREMYE DANIEL HOSTEL MANAGER PROJECT CREATOR ASSISTANCE</marquee></p>
+        </center>
+    </footer>
+
+    <script>
+        // JavaScript functions
+
+        // Function for form validation
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+
+            if (name.trim() === '') {
+                alert('Please enter your name.');
+                return false;
+            }
+
+            if (email.trim() === '') {
+                alert('Please enter your email address.');
+                return false;
+            }
+
+            // Additional validation logic for email format, etc.
+
+            return true;
+        }
+
+        // Function for dynamic content loading
+        function loadContent() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById('dynamic-content').innerHTML = this.responseText;
+                }
+            };
+            xhttp.open('GET', 'dynamic-content.php', true);
+            xhttp.send();
+        }
+
+        // Call the loadContent function when the page loads
+        window.onload = function() {
+            loadContent();
+        };
+    </script>
+</body>
+</html>

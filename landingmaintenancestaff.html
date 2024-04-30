@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardadmin.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maintenancestaff Panel</title>
+</head>
+<body>
+    <h1>maintenancestaff Panel</h1>
+    
+    <!-- maintenancestaff Registration Form -->
+    <h2>Create maintenancestaff</h2>
+    <form method="post" action="landingmaintenancestaff.php">
+         <label for="Name">Name:</label><br>
+        <input type="text" name="Name" required><br>
+        <label for="ContactNumber">Contact Number:</label><br>
+        <input type="number" name="ContactNumber" required><br>
+        <label for="Specialization">Specialization:</label><br>
+        <input type="text" name="Specialization" required><br>
+        <label for="WorkSchedule">Work Schedule:</label><br>
+        <input type="text" name="WorkSchedule" required><br>
+        <label for="DateOfEmployment">Date Of Employment:</label><br>
+        <input type="date" name="DateOfEmployment" required><br>
+
+        <label for="EmergencyContact">Emergency Contact:</label><br>
+          <input type="number" name="EmergencyContact" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User maintenancestaff </h2>
+     <form method="post" action="landingmaintenancestaff.php">
+                    <input type="number" name="StaffID" placeholder=" New StaffID">
+                    <input type="text" name="newName" placeholder="New name">
+                    <input type="number" name="newContactNumber" placeholder="New ContactNumber">
+                    <input type="text" name="newSpecialization" placeholder="New Specialization">
+                    <input type="text" name="newWorkSchedule" placeholder="New WorkSchedule">
+                    <input type="date" name="newDateOfEmployment" placeholder="New DateOfEmployment">
+                    <input type="text" name="newEmergencyContact" placeholder="New EmergencyContact">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+</form>
+</body>
+</html>
